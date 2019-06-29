@@ -1,0 +1,13 @@
+.p-sessions
+  section.p-sessions__inner
+
+    = form_tag login_path, method: :post do
+
+      .c-form-label
+        = label_tag :email, 'メールアドレス'
+      = text_field_tag :email, '', placeholder: 'メールアドレス', class: 'c-form-text', required: :true
+
+      .c-form-label = label_tag :password, 'パスワード'
+      = password_field_tag :password, '', placeholder: 'パスワード入れてや', class: 'c-form-text'
+
+      .u-ta-center.u-mt-30 = submit_tag 'ログイン', class: 'c-btnMain-standard'
