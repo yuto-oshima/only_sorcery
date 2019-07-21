@@ -6,7 +6,7 @@ $ annotate
 ## 環境構築
 ```
 
-$ bundle install
+$ bundle install  --path=vendor/bundle
 $ rails db:create
 $ rails db:migrate
 $ rails db:seed
